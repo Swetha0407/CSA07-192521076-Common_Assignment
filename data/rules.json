@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Allow local web traffic",
+    "source_ip": "192.168.1.0/24",
+    "destination_ip": "*",
+    "port": "80",
+    "protocol": "TCP",
+    "action": "ALLOW",
+    "enabled": true,
+    "id": 1
+  },
+  {
+    "name": "Allow secure web traffic",
+    "source_ip": "*",
+    "destination_ip": "*",
+    "port": "443",
+    "protocol": "TCP",
+    "action": "ALLOW",
+    "enabled": true,
+    "id": 2
+  },
+  {
+    "name": "Block Telnet",
+    "source_ip": "*",
+    "destination_ip": "*",
+    "port": "23",
+    "protocol": "TCP",
+    "action": "BLOCK",
+    "enabled": true,
+    "id": 3
+  }
+]
